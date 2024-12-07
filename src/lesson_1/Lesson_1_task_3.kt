@@ -3,13 +3,15 @@ package lesson_1
 
 fun main() {
 
-    val year:Int = 1961
-    var hour:Int = 9
-    var minute:Int = 7
-    println("Год полета - " + year)
-    println("Взлет - "+"%02d".format(hour)+":"+"%02d".format(minute))
-    hour = 10
+    val year: Int = 1961
+    var hour: String = "09"
+    var minute: Int = 7
+    var formattedMinute = minute.toString().padStart(2, '0')
+
+    println("Год полета - $year")
+    println("Взлет - $hour : $formattedMinute")
+    hour = "10"
     minute = 55
-    println("Посадка - " + hour+":" +minute)
+    println("Посадка - $hour : $minute")
 
 }
