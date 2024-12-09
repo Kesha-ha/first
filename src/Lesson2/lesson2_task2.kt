@@ -1,5 +1,4 @@
 package Lesson2
-
 fun main() {
     val numberOfEmployees: Byte = 50
     val salaryOfEmployees: Short = 30000
